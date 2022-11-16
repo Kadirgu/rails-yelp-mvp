@@ -1,0 +1,9 @@
+<h1>5 Stars Restaurants</h1>
+<div id="restaurants">
+  <% @restaurants.each do |restaurant| %>
+    <%= render restaurant %>
+    <p>
+      <%= link_to "Show this restaurant", restaurant %>
+    </p>
+  <% end %>
+</div>
